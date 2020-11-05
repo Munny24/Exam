@@ -15,6 +15,12 @@ import { SquareComponent } from '../components/square/square.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({ name: 'cosmic' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbButtonModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
